@@ -10,8 +10,8 @@ export default function Home() {
       <Features />
       <Gallery />
       <FAQ />
-      <footer>
-        <p>© 2025 Doodle Tank — A Minecraft Addon by <b>Dirge</b></p>
+      <footer className="footer mt-12 border-t-2 border-black pt-4 text-sm">
+        <p>© 2025 Doodle Tank | Minecraft Addon by <b>Dirge</b></p>
       </footer>
     </div>
   );

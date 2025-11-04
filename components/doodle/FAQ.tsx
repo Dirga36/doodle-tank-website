@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function FAQ() {
   const faqs = [
     { q: "Which Minecraft version is supported?", a: "This addon works with Bedrock 1.21+." },
-    { q: "How do I install it?", a: "Download the `.mcaddon` file and import it into Minecraft." },
+    { q: "How do I install it?", a: 'Instructions in the <a href="https://github.com/Dirga36/Doodle-Tank/wiki/Instalation"><b>Wiki</b></a>' },
     { q: "Is it multiplayer compatible?", a: "Yes! Works on local and Realm worlds." },
   ];
 
@@ -18,10 +18,9 @@ export default function FAQ() {
   return (
     <section className="container mx-auto px-6 py-12">
       <h2 className="text-3xl font-semibold">FAQ</h2>
-
-      <div className="mt-6 space-y-3">
+      <div className="mt-6">
         {faqs.map((f, i) => (
-          <div key={i} className="rounded-lg border bg-card p-4">
+          <div key={i} className="faq-item border-b border-dashed border-black my-4 pb-2">
             <button
               onClick={() => toggle(i)}
               className="w-full text-left flex items-center justify-between gap-4"
@@ -31,9 +30,10 @@ export default function FAQ() {
               <span className="text-muted-foreground">{openIndex === i ? '−' : '+'}</span>
             </button>
 
-            <div className={`mt-3 text-sm text-muted-foreground ${openIndex === i ? 'block' : 'hidden'}`}>
-              {f.a}
-            </div>
+            <div 
+              className={`${openIndex === i ? 'block' : 'hidden'} mt-2 text-sm text-muted-foreground`}
+              dangerouslySetInnerHTML={{ __html: f.a }}
+            />
           </div>
         ))}
       </div>

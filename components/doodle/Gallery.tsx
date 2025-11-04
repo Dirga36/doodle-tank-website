@@ -27,19 +27,19 @@ export default function Gallery() {
   }
 
   return (
-    <section id="gallery" className="container mx-auto px-6 py-12">
-      <h2 className="text-3xl font-semibold">Gallery</h2>
+    <section id="gallery" className="gallery container mx-auto px-6 py-12">
+      <h2 className="text-3xl font-semibold text-center">Gallery</h2>
 
-      <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <div className="gallery-grid mt-6 flex flex-wrap justify-center gap-4">
         {images.map((src, i) => (
-          <button
+          <Button
             key={i}
             onClick={() => openAt(i)}
-            className="overflow-hidden rounded-lg bg-muted hover:scale-105 transition-transform"
+            className="overflow-hidden rounded-lg bg-white hover:scale-105 transition-transform"
             aria-label={`Open image ${i + 1}`}
           >
-            <img src={src} alt={`Doodle Tank ${i + 1}`} className="w-full h-40 object-cover" />
-          </button>
+            <img src={src} alt={`Doodle Tank ${i + 1}`} className="border-2 border-black rounded-md w-64 h-40 object-cover" />
+          </Button>
         ))}
       </div>
 
@@ -49,22 +49,18 @@ export default function Gallery() {
             <img src={images[index]} alt={`Doodle Tank ${index + 1}`} className="w-full rounded-lg shadow-lg" />
 
             <div className="mt-3 flex items-center justify-between gap-3">
-              <Button variant="ghost" onClick={prev} aria-label="Previous image">
-                ◀
-              </Button>
+              <Button onClick={prev} className="px-3 py-1 border-2 border-black bg-white rounded-md">◀</Button>
               <div className="text-sm text-muted-foreground">{index + 1} / {images.length}</div>
-              <Button variant="ghost" onClick={next} aria-label="Next image">
-                ▶
-              </Button>
+              <Button onClick={next} className="px-3 py-1 border-2 border-black bg-white rounded-md">▶</Button>
             </div>
 
-            <button
+            <Button
               onClick={() => setOpen(false)}
-              className="absolute right-2 top-2 rounded-md bg-background/60 px-2 py-1 text-sm"
+              className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 text-sm border-2 border-black"
               aria-label="Close gallery"
             >
               ✕
-            </button>
+            </Button>
           </div>
         </div>
       )}
