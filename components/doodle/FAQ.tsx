@@ -30,10 +30,12 @@ export default function FAQ() {
               <span className="text-muted-foreground">{openIndex === i ? '−' : '+'}</span>
             </button>
 
-            <div 
-              className={`${openIndex === i ? 'block' : 'hidden'} mt-2 text-sm text-muted-foreground`}
-              dangerouslySetInnerHTML={{ __html: f.a }}
-            />
+            {openIndex === i && (
+              <div 
+                className="mt-2 text-sm text-muted-foreground"
+                dangerouslySetInnerHTML={{ __html: f.a }}
+              />
+            )}
           </div>
         ))}
       </div>
