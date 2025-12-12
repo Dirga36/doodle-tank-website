@@ -24,14 +24,28 @@ export default function Hero() {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="hero-image w-48 border-2 border-dashed border-black rounded-md bg-white p-2">
-              <Image
-                src="/images/pack_icon.png"
-                alt="Doodle Tank"
-                width={500}
-                height={300}
-                className="rounded-sm"
-              />
+            <div className="hero-image w-fit border-2 border-dashed border-black rounded-md bg-white p-2">
+              <div className="sketchfab-embed-wrapper">
+                <iframe 
+                  title="Tiger 1" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  src="https://sketchfab.com/models/7b4d89d9353249cc8042ff72d6f7977a/embed"
+                />
+                <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
+                  <a href="https://sketchfab.com/3d-models/tiger-1-7b4d89d9353249cc8042ff72d6f7977a?utm_medium=embed&utm_campaign=share-popup&utm_content=7b4d89d9353249cc8042ff72d6f7977a" target="_blank" rel="nofollow" style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+                    Tiger 1
+                  </a>
+                  {' by '}
+                  <a href="https://sketchfab.com/dirge-?utm_medium=embed&utm_campaign=share-popup&utm_content=7b4d89d9353249cc8042ff72d6f7977a" target="_blank" rel="nofollow" style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+                    Dirge
+                  </a>
+                  {' on '}
+                  <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7b4d89d9353249cc8042ff72d6f7977a" target="_blank" rel="nofollow" style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+                    Sketchfab
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

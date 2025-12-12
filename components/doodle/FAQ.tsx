@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function FAQ() {
   const faqs = [
@@ -21,14 +22,14 @@ export default function FAQ() {
       <div className="mt-6">
         {faqs.map((f, i) => (
           <div key={i} className="faq-item border-b border-dashed border-black my-4 pb-2">
-            <button
+            <Button
               onClick={() => toggle(i)}
               className="w-full text-left flex items-center justify-between gap-4"
               aria-expanded={openIndex === i}
-            >
+>
               <span className="font-medium">{f.q}</span>
               <span className="text-muted-foreground">{openIndex === i ? '−' : '+'}</span>
-            </button>
+            </Button>
 
             {openIndex === i && (
               <div 
