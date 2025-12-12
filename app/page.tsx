@@ -5,14 +5,16 @@ import FAQ from '@/components/doodle/FAQ';
 
 export default function Home() {
   return (
-    <div>
-      <Hero />
-      <Features />
-      <Gallery />
-      <FAQ />
+    <>
+      <main>
+        <Hero />
+        <Features />
+        <Gallery />
+        <FAQ />
+      </main>
       <footer className="footer mt-12 border-t-2 border-black pt-4 text-sm">
         <p>© 2025 Doodle Tank | Minecraft Addon by <b>Dirge</b></p>
       </footer>
-    </div>
+    </>
   );
 }
