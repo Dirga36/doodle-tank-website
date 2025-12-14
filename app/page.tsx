@@ -3,6 +3,9 @@ import Features from '@/components/doodle/Features';
 import Gallery from '@/components/doodle/Gallery';
 import FAQ from '@/components/doodle/FAQ';
 
+//Animated
+import { SlidingNumber } from '@/components/animate-ui/primitives/texts/sliding-number';
+
 export default function Home() {
   return (
     <>

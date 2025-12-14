@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
+import { ChevronRight } from "../animate-ui/icons/chevron-right";
+import { ChevronLeft } from "../animate-ui/icons/chevron-left";
+import { X } from "../animate-ui/icons/x";
 
 export default function Gallery() {
   const images = [
@@ -33,7 +36,7 @@ export default function Gallery() {
 
       <div className="gallery-grid mt-6 flex flex-wrap justify-center gap-4">
         {images.map((src, i) => (
-          <Button
+          <button
             key={i}
             onClick={() => openAt(i)}
             className="overflow-hidden rounded-lg bg-white hover:scale-105 transition-transform"
@@ -45,7 +48,7 @@ export default function Gallery() {
               height={500}
               className="border-2 border-black rounded-md w-64 h-40 object-cover">
             </Image>
-          </Button>
+          </button>
         ))}
       </div>
 
@@ -60,18 +63,22 @@ export default function Gallery() {
               className="w-full rounded-lg shadow-lg">
             </Image>
 
-            <div className="mt-3 flex items-center justify-between gap-3">
-              <Button onClick={prev} className="px-3 py-1 border-2 border-black bg-white rounded-md">◀</Button>
+            <div className="mt-3 flex items-center justify-between gap-3 bg-white rounded-md">
+              <button onClick={prev} className="px-3 py-1">
+                <ChevronLeft animateOnHover />
+              </button>
               <div className="text-sm text-muted-foreground">{index + 1} / {images.length}</div>
-              <Button onClick={next} className="px-3 py-1 border-2 border-black bg-white rounded-md">▶</Button>
+              <button onClick={next} className="px-3 py-1">
+                <ChevronRight animateOnHover />
+              </button>
             </div>
 
-            <Button
+            <button
               onClick={() => setOpen(false)}
               className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 text-sm border-2 border-black"
               aria-label="Close gallery">
-              ✕
-            </Button>
+              <X animateOnHover />
+            </button>
           </div>
         </div>
       )}
