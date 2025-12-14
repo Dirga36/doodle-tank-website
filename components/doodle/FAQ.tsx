@@ -21,7 +21,7 @@ export default function FAQ() {
       <h2 className="text-3xl font-semibold">FAQ</h2>
       <div className="mt-6">
         {faqs.map((f, i) => (
-          <div key={i} className="faq-item border-b border-dashed border-black my-4 pb-2">
+          <div key={i} className="border-b border-dashed border-black my-4 pb-2">
             <Button
               onClick={() => toggle(i)}
               className="w-full text-left flex items-center justify-between gap-4"

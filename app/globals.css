@@ -117,12 +117,6 @@ body {
   color: var(--color-foreground);
 }
 
-/* utility for stroked title that Tailwind doesn't provide by default */
-.title-stroke {
-  -webkit-text-stroke: 2px black;
-  text-transform: uppercase;
-}
-
 /* small helper to emulate the dotted/dashed borders when needed */
 .dashed-3 {
   border-style: dashed;

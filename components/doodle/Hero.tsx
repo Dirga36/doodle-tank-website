@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section className="Home container mx-auto px-6 py-12">
-      <div className="hero border-4 border-black p-8 rounded-xl mb-12">
+    <section className="container mx-auto px-6 py-12">
+      <div className="border-4 border-black p-8 rounded-xl mb-12">
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h1 className="title title-stroke text-5xl font-extrabold leading-tight text-white">Doodle Tank</h1>
-            <p className="subtitle mt-4 text-lg text-muted-foreground max-w-xl">
+            <h1 className="text-5xl font-extrabold leading-tight text-black">Doodle Tank</h1>
+            <p className="mt-4 text-lg text-muted-foreground max-w-xl">
               Add doodle style tanks to Minecraft and spice up your worlds with goofy, doodle battle tank.
             </p>
 
@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="hero-image w-fit border-2 border-dashed border-black rounded-md bg-white p-2">
+            <div className="w-fit border-2 border-dashed border-black rounded-md bg-white p-2">
               <div className="sketchfab-embed-wrapper">
                 <iframe 
                   title="Tiger 1" 
