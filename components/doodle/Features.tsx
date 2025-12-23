@@ -1,8 +1,15 @@
+import {
+  Card,
+  CardAction,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
 export default function Features() {
   const features = [
     { title: "Craftable Tanks", desc: "Build tanks using custom doodle components." },
     { title: "Unique Stats", desc: "Each tank has its own power, speed, and defense!" },
-    { title: "Doodle Art", desc: "A creative, hand-drawn style to spice up your world." },
   ];
 
   return (
@@ -11,9 +18,19 @@ export default function Features() {
 
       <div className="mt-6 flex flex-wrap justify-center gap-6">
         {features.map((f, i) => (
-          <div key={i} className="border-2 border-black p-4 w-64 rounded-md bg-white">
-            <h3 className="font-semibold">{f.title}</h3>
-            <p className="mt-2 text-sm text-muted-foreground">{f.desc}</p>
+          <div key={i}>
+            <Card className="border-2 p-4 w-64 h-32 rounded-md">
+              <CardHeader>
+                <CardTitle>
+                  <h3 className="font-semibold">{f.title}</h3>
+                </CardTitle>
+                <CardDescription>
+                  <p className="mt-2 text-sm text-muted-foreground">{f.desc}</p>
+                </CardDescription>
+                <CardAction>
+                </CardAction>
+              </CardHeader>
+            </Card>
           </div>
         ))}
       </div>

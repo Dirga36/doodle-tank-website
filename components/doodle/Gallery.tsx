@@ -25,7 +25,7 @@ export default function Gallery() {
       <Carousel className="w-full">
         <CarouselContent>
           {galleryItems.map((item) => (
-            <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={item.id} className="md:basis-1 lg:basis-1/2">
               <div className="border-2 border-black rounded-md overflow-hidden bg-white hover:shadow-lg transition-shadow h-full">
                 <img 
                   src={item.src} 
