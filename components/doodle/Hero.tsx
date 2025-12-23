@@ -14,10 +14,6 @@ export default function Hero() {
                 className="btn inline-block mt-4 px-6 py-3 border-2 border-black text-black bg-white rounded-lg transition duration-200 hover:bg-black hover:text-white">
                 Download
               </a>
-              <a href="#gallery"
-                className="btn inline-block mt-4 px-6 py-3 border-2 border-black text-black bg-white rounded-lg transition duration-200 hover:bg-black hover:text-white">
-                View Gallery
-              </a>
             </div>
           </div>
 

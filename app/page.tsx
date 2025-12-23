@@ -1,6 +1,5 @@
 import Hero from '@/components/doodle/Hero';
 import Features from '@/components/doodle/Features';
-import Gallery from '@/components/doodle/Gallery';
 import FAQ from '@/components/doodle/FAQ';
 import ModeToggle from '@/components/doodle/mode-toggle';
 import GithubStarsUsable from '@/components/doodle/github-stars-usable';
@@ -24,7 +23,6 @@ export default function Home() {
         </header>
         <Hero />
         <Features />
-        <Gallery />
         <FAQ />
       </main>
       <footer className="footer mt-12 border-t-2 border-black pt-4 text-sm">
