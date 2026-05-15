@@ -18,9 +18,9 @@ export default function Home() {
           <a
             href="https://github.com/Dirga36/Doodle-Tank"
             aria-label="Doodle Tank on GitHub"
-            className="inline-flex h-10 items-center justify-center rounded-full border border-foreground/10 bg-background/70 text-foreground shadow-sm transition hover:-translate-y-0.5 hover:border-foreground/30"
+            className="inline-flex h-10 items-center justify-center "
           >
-            <GitHubStarsButton username="Dirga36" repo="Doodle-Tank" variant={"ghost"}/>
+            <GitHubStarsButton username="Dirga36" repo="Doodle-Tank" variant={"ghost"} className="border border-black"/>
           </a>
           <nav className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em]">
             <a
@@ -233,10 +233,10 @@ export default function Home() {
       </a>
 
       <footer className="border-t border-foreground/10 mt-5">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 text-sm text-muted-foreground">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-2 text-sm text-muted-foreground">
           <span>2025 Doodle Tank | by Dirge/Fu'ad</span>
           <a
-            className="inline-flex items-center justify-center rounded-full border border-foreground/10 bg-background/70 p-2 shadow-sm transition hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center"
             href="https://www.dicoding.com/users/fuad_husnan1yhz/academies"
           >
             <Image
