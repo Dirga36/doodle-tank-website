@@ -10,6 +10,15 @@ import {
 } from "@/components/ui/carousel";
 import { GitHubStarsButton } from "@/components/animate-ui/components/buttons/github-stars";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 export default function Home() {
   return (
     <div className="relative min-h-screen mt-10">
@@ -20,7 +29,12 @@ export default function Home() {
             aria-label="Doodle Tank on GitHub"
             className="inline-flex h-10 items-center justify-center "
           >
-            <GitHubStarsButton username="Dirga36" repo="Doodle-Tank" variant={"ghost"} className="border border-black"/>
+            <GitHubStarsButton
+              username="Dirga36"
+              repo="Doodle-Tank"
+              variant={"ghost"}
+              className="border border-black"
+            />
           </a>
           <nav className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em]">
             <a
@@ -98,6 +112,99 @@ export default function Home() {
                 Each tank has its own power, speed, and defense!
               </p>
             </article>
+          </div>
+          <div className="mx-20">
+            <h3 className="text-center text-xl font-semibold mb-4">Model Showcase</h3>
+            <Carousel
+              opts={{
+                align: "start",
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                <CarouselItem>
+                  <Dialog>
+                    <DialogTrigger>
+                      <Image
+                        className="slider-image"
+                        src="/images/entities/strv_103.png"
+                        alt="Strv 103 model footage"
+                        width={960}
+                        height={540}
+                      />
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader className="space-y-5">
+                        <DialogTitle>STRV 103</DialogTitle>
+                        <DialogDescription>
+                          <iframe
+                            className="aspect-video w-full rounded-2xl border border-foreground/10"
+                            title="Strv 103"
+                            allowFullScreen
+                            src="https://sketchfab.com/models/093856a491ce46f79a65b98f38b92e32/embed"
+                          ></iframe>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
+                </CarouselItem>
+                <CarouselItem>
+                  <Dialog>
+                    <DialogTrigger>
+                      <Image
+                        className="slider-image"
+                        src="/images/entities/centurion_action_x.png"
+                        alt="Centurion Action X model footage"
+                        width={960}
+                        height={540}
+                      />
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader className="space-y-5">
+                        <DialogTitle>Centurion Action X</DialogTitle>
+                        <DialogDescription>
+                          <iframe
+                            className="aspect-video w-full rounded-2xl border border-foreground/10"
+                            title="Strv 103"
+                            allowFullScreen
+                            src="https://sketchfab.com/models/497a1b6ac4944301b8333053f6aa2ff3/embed"
+                          ></iframe>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
+                </CarouselItem>
+
+                <CarouselItem>
+                  <Dialog>
+                    <DialogTrigger>
+                      <Image
+                        className="slider-image"
+                        src="/images/entities/tiger_1.png"
+                        alt="Tiger 1 model footage"
+                        width={960}
+                        height={540}
+                      />
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader className="space-y-5">
+                        <DialogTitle>Tiger 1</DialogTitle>
+                        <DialogDescription>
+                          <iframe
+                            className="aspect-video w-full rounded-2xl border border-foreground/10"
+                            title="Strv 103"
+                            allowFullScreen
+                            src="https://sketchfab.com/models/7b4d89d9353249cc8042ff72d6f7977a/embed"
+                          ></iframe>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </section>
 
@@ -195,8 +302,6 @@ export default function Home() {
                   />
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="border-foreground/20 bg-background/80 shadow-md backdrop-blur hover:bg-background" />
-              <CarouselNext className="border-foreground/20 bg-background/80 shadow-md backdrop-blur hover:bg-background" />
             </Carousel>
           </section>
 
