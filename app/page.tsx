@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ModeToggle } from "@/components/mode-toggle";
-import { MoveUp, Star } from "lucide-react";
+import { MoveUp } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -46,7 +46,7 @@ export default function Home() {
       <main className="mx-auto w-full max-w-6xl space-y-24 px-6 py-8">
         <section className="grid p-5 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] rounded-3xl border-2 border-solid">
           <div className="space-y-6">
-            <h1 className="text-5xl font-[var(--font-display)] leading-[0.9] tracking-tight md:text-7xl">
+            <h1 className="text-5xl font-(--font-display) leading-[0.9] tracking-tight md:text-7xl">
               Doodle Tank
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
@@ -82,7 +82,7 @@ export default function Home() {
         </section>
 
         <section id="features" className="space-y-8">
-          <h2 className="text-3xl font-[var(--font-display)] tracking-wide md:text-4xl">
+          <h2 className="text-3xl font-(--font-display) tracking-wide md:text-4xl">
             Features
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
@@ -102,7 +102,7 @@ export default function Home() {
         </section>
 
         <section id="faq" className="space-y-6">
-          <h2 className="text-3xl font-[var(--font-display)] tracking-wide md:text-4xl">
+          <h2 className="text-3xl font-(--font-display) tracking-wide md:text-4xl">
             FAQ
           </h2>
 
@@ -154,7 +154,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
               Real-world reference
             </p>
-            <h1 className="text-4xl font-[var(--font-display)] tracking-wide md:text-5xl">
+            <h1 className="text-4xl font-(--font-display) tracking-wide md:text-5xl">
               Strv 103
             </h1>
             <p className="max-w-2xl text-base text-muted-foreground">
@@ -169,7 +169,7 @@ export default function Home() {
               <CarouselContent>
                 <CarouselItem>
                   <Image
-                    className="slider-image is-active h-[320px] w-full rounded-2xl object-cover shadow-sm md:h-[420px]"
+                    className="slider-image is-active h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
                     src="/images/Stridsvagn_103_outside_the_Swedish_Army_Museum_in_September_2015.jpg"
                     alt="Strv 103 parked outside the Swedish Army Museum"
                     width={960}
@@ -178,7 +178,7 @@ export default function Home() {
                 </CarouselItem>
                 <CarouselItem>
                   <Image
-                    className="slider-image h-[320px] w-full rounded-2xl object-cover shadow-sm md:h-[420px]"
+                    className="slider-image h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
                     src="/images/STRV-103_demonstrating_at_P7_Revingehed,_24th_April_2022.jpg"
                     alt="Strv 103 demonstrating mobility at P7 Revingehed"
                     width={960}
@@ -187,7 +187,7 @@ export default function Home() {
                 </CarouselItem>
                 <CarouselItem>
                   <Image
-                    className="slider-image h-[320px] w-full rounded-2xl object-cover shadow-sm md:h-[420px]"
+                    className="slider-image h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
                     src="/images/sw_strv_103c.jpg"
                     alt="Side profile of a Strv 103C tank"
                     width={960}

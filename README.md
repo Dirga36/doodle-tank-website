@@ -1,3 +1,6 @@
+# A dedicated Single Page Application (SPA) for [Doodle Tank](https://github.com/Dirga36/Doodle-Tank).
+The purpose is to provide an overview of Doodle Tank.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
