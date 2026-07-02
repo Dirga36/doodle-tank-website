@@ -44,6 +44,9 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
+      <head>
+        <meta name="google-site-verification" content="0RNaIzvB-sBEFvSjYlI3rWpMah3pz0IUMWXiY8EamC4" />
+      </head>
       <body className="min-h-full flex flex-col">
         {" "}
         <ThemeProvider
