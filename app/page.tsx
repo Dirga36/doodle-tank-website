@@ -314,7 +314,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/Stridsvagn_103_outside_the_Swedish_Army_Museum_in_September_2015.jpg"
+                          src="/images/footage/a/Stridsvagn_103_outside_the_Swedish_Army_Museum_in_September_2015.jpg"
                           alt="Strv 103 parked outside the Swedish Army Museum"
                           width={960}
                           height={540}
@@ -323,7 +323,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/STRV-103_demonstrating_at_P7_Revingehed,_24th_April_2022.jpg"
+                          src="/images/footage/a/STRV-103_demonstrating_at_P7_Revingehed,_24th_April_2022.jpg"
                           alt="Strv 103 demonstrating mobility at P7 Revingehed"
                           width={960}
                           height={540}
@@ -332,7 +332,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/sw_strv_103c.jpg"
+                          src="/images/footage/a/sw_strv_103c.jpg"
                           alt="Side profile of a Strv 103C tank"
                           width={960}
                           height={540}
@@ -386,7 +386,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/Stridsvagn_103_outside_the_Swedish_Army_Museum_in_September_2015.jpg"
+                          src="/images/footage/b/Centurion+Action+X.jpg"
                           alt="Reference tank image for Centurion Action X profile"
                           width={960}
                           height={540}
@@ -395,7 +395,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/STRV-103_demonstrating_at_P7_Revingehed,_24th_April_2022.jpg"
+                          src="/images/footage/b/2899932_original.jpg"
                           alt="Reference armored vehicle movement image"
                           width={960}
                           height={540}
@@ -404,7 +404,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/sw_strv_103c.jpg"
+                          src="/images/footage/b/2893846_original.jpg"
                           alt="Reference side profile image for tank details"
                           width={960}
                           height={540}
@@ -457,7 +457,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/Stridsvagn_103_outside_the_Swedish_Army_Museum_in_September_2015.jpg"
+                          src="/images/footage/c/Untitled-528-×-290-px-510-×-393-px-1.jpg"
                           alt="Reference heavy tank museum image"
                           width={960}
                           height={540}
@@ -466,7 +466,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/STRV-103_demonstrating_at_P7_Revingehed,_24th_April_2022.jpg"
+                          src="/images/footage/c/Bundesarchiv_Bild_101I-299-1805-16,_Nordfrankreich,_Panzer_VI_(Tiger_I).2.jpg"
                           alt="Reference heavy tank demonstration image"
                           width={960}
                           height={540}
@@ -475,7 +475,7 @@ export default function Home() {
                       <CarouselItem>
                         <Image
                           className="h-80 w-full rounded-2xl object-cover shadow-sm md:h-105"
-                          src="/images/sw_strv_103c.jpg"
+                          src="/images/footage/c/bundesarchiv-bild-101i-299-1805-12-scheck-cc-by-sa-3-0-768x492.jpg"
                           alt="Reference side profile armored vehicle image"
                           width={960}
                           height={540}
