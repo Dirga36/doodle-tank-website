@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# VS code
+.vscode
+
+# LLM resouces
+.agents
+.github
