@@ -164,6 +164,9 @@ function SlidingNumber({
   const prevNumberRef = React.useRef<number>(
     initiallyStable ? initialNumeric : 0,
   );
+  const [prevRenderedNumber, setPrevRenderedNumber] = React.useState<number>(
+    initiallyStable ? initialNumeric : 0,
+  );
 
   const hasAnimated = fromNumber !== undefined;
 
@@ -216,9 +219,12 @@ function SlidingNumber({
       });
       return () => unsubscribe();
     } else {
-      setEffectiveNumber(
-        initiallyStable ? initialNumeric : !isInView ? 0 : initialNumeric,
-      );
+      const timeoutId = setTimeout(() => {
+        setEffectiveNumber(
+          initiallyStable ? initialNumeric : !isInView ? 0 : initialNumeric,
+        );
+      }, 0);
+      return () => clearTimeout(timeoutId);
     }
   }, [
     hasAnimated,
@@ -252,7 +258,7 @@ function SlidingNumber({
     ? newIntStrRaw.padStart(finalIntLength, '0')
     : newIntStrRaw;
 
-  const prevFormatted = formatNumber(prevNumberRef.current);
+  const prevFormatted = formatNumber(prevRenderedNumber);
   const [prevIntStrRaw = '', prevDecStrRaw = ''] = prevFormatted.split('.');
   const prevIntStr = padStart
     ? prevIntStrRaw.padStart(finalIntLength, '0')
@@ -274,6 +280,10 @@ function SlidingNumber({
   React.useEffect(() => {
     if (isInView || initiallyStable) {
       prevNumberRef.current = effectiveNumber;
+      const timeoutId = setTimeout(() => {
+        setPrevRenderedNumber(effectiveNumber);
+      }, 0);
+      return () => clearTimeout(timeoutId);
     }
   }, [effectiveNumber, isInView, initiallyStable]);
 

@@ -21,6 +21,22 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Quality Checks
+
+Run these commands before opening a pull request:
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
+
+Or run the full local gate in one command:
+
+```bash
+npm run verify
+```
+
 In case you haven't installed the dependencies:
 ```bash
 npm install

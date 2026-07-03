@@ -74,9 +74,11 @@ function GithubStars({
   React.useEffect(() => {
     if (value !== undefined && username && repo) return;
     if (!isInView) {
-      setStars(0);
-      setIsLoading(true);
-      return;
+      const resetTimeout = setTimeout(() => {
+        setStars(0);
+        setIsLoading(true);
+      }, 0);
+      return () => clearTimeout(resetTimeout);
     }
 
     const timeout = setTimeout(() => {

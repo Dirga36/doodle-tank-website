@@ -70,6 +70,7 @@ function Slot<T extends HTMLElement = HTMLElement>({
     typeof childType === 'object' &&
     childType !== null &&
     isMotionComponent(childType);
+  // This wrapper intentionally adapts arbitrary child element types into motion components.
   const Base = isAlreadyMotion ? childType : motion.create(childType);
 
   const { ref: childRef, ...childProps } = children.props as AnyProps;

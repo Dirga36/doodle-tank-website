@@ -39,6 +39,7 @@ export default function RootLayout({
         "h-full",
         "antialiased",
         spaceGrotesk.variable,
+        bebasNeue.variable,
         geistMono.variable,
         "font-sans",
       )}
