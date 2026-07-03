@@ -339,7 +339,7 @@ export default function Home() {
 
       <footer className="border-t border-foreground/10 mt-5">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-2 text-sm text-muted-foreground">
-          <span>2025 Doodle Tank | by Dirge/Fu'ad</span>
+          <span>2025 Doodle Tank | by Dirge/Fuad</span>
           <a
             className="inline-flex items-center justify-center"
             href="https://www.dicoding.com/users/fuad_husnan1yhz/academies"
