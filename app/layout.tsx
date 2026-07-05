@@ -3,7 +3,7 @@ import { Bebas_Neue, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/features/theme-provider";
 import { Analytics } from "@vercel/analytics/next"
 
 const spaceGrotesk = Space_Grotesk({

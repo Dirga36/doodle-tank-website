@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ModeToggle } from "@/components/mode-toggle";
+import { ModeToggle } from "@/components/features/mode-toggle";
 import { GitHubStarsButton } from "@/components/animate-ui/components/buttons/github-stars";
 
-import BackToTop from "@/components/back-to-top";
+import BackToTop from "@/components/features/back-to-top";
 import MainContent from "@/components/features/main/main-content";
 import AsideContent from "@/components/features/aside/aside-content";
 
