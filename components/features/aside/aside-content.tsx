@@ -34,7 +34,7 @@ export default function AsideContent() {
         </div>
 
         <Tabs defaultValue="strv-103" className="w-full">
-          <TabsList className="border-2 w-full">
+          <TabsList className="border-2 sm:w-full lg:w-fit">
             <TabsTrigger value="strv-103">Strv 103</TabsTrigger>
             <TabsTrigger value="centurion-action-x">
               Centurion Action X

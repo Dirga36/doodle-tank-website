@@ -7,12 +7,29 @@ import {
 import {
   Carousel,
   CarouselContent,
-  CarouselPrevious,
-  CarouselNext,
 } from "@/components/ui/carousel";
 import { Strv103, Cax, Tiger1 } from "../model-showcase-item";
 
 export default function MainContent() {
+
+  const strv_103 = [
+    { status: "HP", value: 200 },
+    { status: "AG", value: 250 },
+    { status: "STR", value: 200 },
+  ]
+  
+  const centurion_action_x = [
+    { status: "HP", value: 100 },
+    { status: "AG", value: 300 },
+    { status: "STR", value: 200 },
+  ]
+  
+  const tiger_1 = [
+    { status: "HP", value: 300 },
+    { status: "AG", value: 100 },
+    { status: "STR", value: 300 },
+  ]
+  
   return (
     <main className="mx-auto w-full max-w-6xl space-y-24 px-6 py-8">
       <section className="grid p-5 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] rounded-3xl border-2 border-solid">
@@ -93,12 +110,10 @@ export default function MainContent() {
             className="w-full"
           >
             <CarouselContent>
-              <Strv103 />
-              <Cax />
-              <Tiger1 />
+              <Strv103 stats={strv_103} />
+              <Cax stats={centurion_action_x} />
+              <Tiger1 stats={tiger_1} />
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
         </div>
       </section>

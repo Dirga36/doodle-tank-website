@@ -1,3 +1,4 @@
+import { ChartRadar } from "../chart-radar";
 import { CarouselItem } from "../ui/carousel";
 import {
   Dialog,
@@ -8,8 +9,18 @@ import {
   DialogDescription,
 } from "../ui/dialog";
 import Image from "next/image";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-function Strv103() {
+type TankStat = {
+  status: string;
+  value: number;
+};
+
+type ShowcaseItemProps = {
+  stats: TankStat[];
+};
+
+function Strv103({ stats }: ShowcaseItemProps) {
   return (
     <>
       <CarouselItem>
@@ -23,18 +34,22 @@ function Strv103() {
               height={540}
             />
           </DialogTrigger>
-          <DialogContent>
-            <DialogHeader className="space-y-5">
-              <DialogTitle>STRV 103</DialogTitle>
-              <DialogDescription>
-                <iframe
-                  className="aspect-video w-full rounded-2xl border border-foreground/10"
-                  title="Strv 103"
-                  allowFullScreen
-                  src="https://sketchfab.com/models/093856a491ce46f79a65b98f38b92e32/embed"
-                ></iframe>
-              </DialogDescription>
-            </DialogHeader>
+          <DialogContent className="px-15 min-w-max flex flex-col justify-center">
+            <ScrollArea className="h-[300px] pr-8">
+              <DialogHeader>
+                <DialogTitle>STRV 103</DialogTitle>
+                <DialogDescription>
+                  <iframe
+                    className="mb-5 aspect-video w-full rounded-2xl border border-foreground/10"
+                    title="Strv 103"
+                    allowFullScreen
+                    src="https://sketchfab.com/models/093856a491ce46f79a65b98f38b92e32/embed"
+                  ></iframe>
+                </DialogDescription>
+              </DialogHeader>
+              <ChartRadar data={stats} />
+              <ScrollBar />
+            </ScrollArea>
           </DialogContent>
         </Dialog>
       </CarouselItem>
@@ -42,7 +57,7 @@ function Strv103() {
   );
 }
 
-function Cax() {
+function Cax({ stats }: ShowcaseItemProps) {
   return (
     <>
       <CarouselItem>
@@ -56,18 +71,22 @@ function Cax() {
               height={540}
             />
           </DialogTrigger>
-          <DialogContent>
-            <DialogHeader className="space-y-5">
-              <DialogTitle>Centurion Action X</DialogTitle>
-              <DialogDescription>
-                <iframe
-                  className="aspect-video w-full rounded-2xl border border-foreground/10"
-                  title="Strv 103"
-                  allowFullScreen
-                  src="https://sketchfab.com/models/497a1b6ac4944301b8333053f6aa2ff3/embed"
-                ></iframe>
-              </DialogDescription>
-            </DialogHeader>
+          <DialogContent className="px-15 min-w-max flex flex-col justify-center">
+            <ScrollArea className="h-[300px] pr-8">
+              <DialogHeader>
+                <DialogTitle>Centurion Action X</DialogTitle>
+                <DialogDescription>
+                  <iframe
+                    className="mb-5 aspect-video w-full rounded-2xl border border-foreground/10"
+                    title="Strv 103"
+                    allowFullScreen
+                    src="https://sketchfab.com/models/497a1b6ac4944301b8333053f6aa2ff3/embed"
+                  ></iframe>
+                </DialogDescription>
+              </DialogHeader>
+              <ChartRadar data={stats} />
+              <ScrollBar />
+            </ScrollArea>
           </DialogContent>
         </Dialog>
       </CarouselItem>
@@ -75,7 +94,7 @@ function Cax() {
   );
 }
 
-function Tiger1() {
+function Tiger1({ stats }: ShowcaseItemProps) {
   return (
     <>
       <CarouselItem>
@@ -89,18 +108,22 @@ function Tiger1() {
               height={540}
             />
           </DialogTrigger>
-          <DialogContent>
-            <DialogHeader className="space-y-5">
-              <DialogTitle>Tiger 1</DialogTitle>
-              <DialogDescription>
-                <iframe
-                  className="aspect-video w-full rounded-2xl border border-foreground/10"
-                  title="Strv 103"
-                  allowFullScreen
-                  src="https://sketchfab.com/models/7b4d89d9353249cc8042ff72d6f7977a/embed"
-                ></iframe>
-              </DialogDescription>
-            </DialogHeader>
+          <DialogContent className="px-15 min-w-max flex flex-col justify-center">
+            <ScrollArea className="h-[300px] pr-8">
+              <DialogHeader>
+                <DialogTitle>STRV 103</DialogTitle>
+                <DialogDescription>
+                  <iframe
+                    className="mb-5 aspect-video w-full rounded-2xl border border-foreground/10"
+                    title="Strv 103"
+                    allowFullScreen
+                    src="https://sketchfab.com/models/7b4d89d9353249cc8042ff72d6f7977a/embed"
+                  ></iframe>
+                </DialogDescription>
+              </DialogHeader>
+              <ChartRadar data={stats} />
+              <ScrollBar />
+            </ScrollArea>
           </DialogContent>
         </Dialog>
       </CarouselItem>
