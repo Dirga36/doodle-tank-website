@@ -1,12 +1,7 @@
 "use client";
 
 import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import {
   ChartContainer,
   ChartTooltip,
@@ -24,7 +19,7 @@ type RadarPoint = {
 const chartConfig = {
   value: {
     label: "value",
-    color: "var(--chart-5)",
+    color: "var(--chart-custom)",
   },
 } satisfies ChartConfig;
 
@@ -43,7 +38,7 @@ export function ChartRadar({ data }: ChartRadarProps) {
           config={chartConfig}
           className="mx-auto aspect-square max-h-[250px] w-[200px]"
         >
-          <RadarChart data={data}>
+          <RadarChart  data={data}>
             <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
             <PolarAngleAxis dataKey="status" />
             <PolarGrid />
