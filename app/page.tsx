@@ -5,6 +5,7 @@ import { GitHubStarsButton } from "@/components/animate-ui/components/buttons/gi
 import BackToTop from "@/components/features/back-to-top";
 import MainContent from "@/components/features/main/main-content";
 import AsideContent from "@/components/features/aside/aside-content";
+import { ChatWidget } from "@/components/features/chat/chat-widget";
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
       <AsideContent />
 
       <BackToTop />
+      <ChatWidget />
 
       <footer className="border-t border-foreground/10 mt-5">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-2 text-sm text-muted-foreground">
