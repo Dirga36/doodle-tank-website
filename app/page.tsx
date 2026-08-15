@@ -52,7 +52,7 @@ export default function Home() {
 
       <BackToTop />
 
-      <Notes/>
+      {/*<!-- <Notes/> -->*/}
 
       <footer className="border-t border-foreground/10 mt-5">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-2 text-sm text-muted-foreground">
